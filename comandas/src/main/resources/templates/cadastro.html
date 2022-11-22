@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="refresh" content="10">
+<link
+	href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"
+	rel="stylesheet"
+	integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi"
+	crossorigin="anonymous">
+<title>Cadastro de Pedidos</title>
+</head>
+<body>
+	<div class="container">
+		<div class="row">
+			<h1>Cadastro de pedido</h1>
+		</div>
+
+		<div class="mb-3">
+				<label for="nome" class="form-label">Nome:</label> 
+				<input type="text" class="textoInput" id="nome" size="15" required>
+			</div>
+
+
+		<fieldset>
+			<legend>Sanduíches:</legend>
+
+			<div>
+				<input type="checkbox" id="homelander" name="homelander"> <label
+					for="homelander">Homelander (pão caseiro, hamburguer
+					bovino, salada, maionese da casa, cebola caramelizada, barbecue,
+					mussarela) </label>
+			</div>
+
+			<div>
+				<input type="checkbox" id="starLight" name="starLight"> <label
+					for="starLight">StarLight (pão caseiro, tomate, hamburguer
+					bovino, milho, cream cheese, bacon, picles)</label>
+			</div>
+
+			<div>
+				<input type="checkbox" id="nightWing" name="nightWing"> <label
+					for="nightWing">NightWing (pão caseiro, ovo, hamburguer
+					suíno, mussarela, salsicha, cheedar, bacon, salada, milho, cebola,
+					caramelizada, )</label>
+			</div>
+		</fieldset>
+
+		<fieldset>
+			<legend>Bebidas:</legend>
+
+			<div>
+				<input type="checkbox" id="lexLuthor" name="lexLuthor"> <label
+					for="lexLuthor">Lex Luthor (sprite)</label>
+			</div>
+
+			<div>
+				<input type="checkbox" id="Darkseid" name="Darkseid"> <label
+					for="Darkseid">Darkseid (coca-cola)</label>
+			</div>
+
+			<div>
+				<input type="checkbox" id="greengoblin" name="greengoblin">
+				<label for="greengoblin">Green Goblin (guaraná)</label>
+			</div>
+
+			<div>
+				<input type="checkbox" id="joker" name="joker"> <label
+					for="joker">Joker (Budweiser)</label>
+			</div>
+		</fieldset>
+
+		<fieldset>
+			<legend>Acompanhamentos:</legend>
+
+			<div>
+				<input type="checkbox" id="robin" name="robin"> <label
+					for="robin">Robin (porção de batata)</label>
+			</div>
+
+			<div>
+				<input type="checkbox" id="bob" name="bob"> <label for="bob">Bob
+					(peixe frito)</label>
+			</div>
+
+		</fieldset>
+		
+		<button type="submit" class="btn btn-primary">Concluir</button>
+	</div>
+
+	<script
+		src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
+		integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
+		crossorigin="anonymous"></script>
+</body>
+</html>
