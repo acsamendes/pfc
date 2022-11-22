@@ -2,7 +2,6 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<meta http-equiv="refresh" content="10">
 <link
 	href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"
 	rel="stylesheet"
@@ -15,10 +14,10 @@
 		<div class="row">
 			<h1>Cadastro de pedido</h1>
 		</div>
-
+	<form th:action="@{/comandas/cadastrar}" method="post" th:object="${pedido}" >
 		<div class="mb-3">
 				<label for="nome" class="form-label">Nome:</label> 
-				<input type="text" class="textoInput" id="nome" size="15" required>
+				<input type="text" class="textoInput" id="nome" size="15"  th:field="*{nome}" required>
 			</div>
 
 
@@ -87,6 +86,22 @@
 		
 		<button type="submit" class="btn btn-primary">Concluir</button>
 	</div>
+	</form>
+	
+	<table class="table">
+			<thead>
+				<tr>
+					<th scope="col">Nome</th>
+					<th scope="col"></th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr data-th-each="pedido : ${pedido}">
+					<td data-th-text="${pedido.nome}"></td>
+				</tr>
+			</tbody>
+		</table>
+		
 
 	<script
 		src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
